@@ -1,0 +1,2 @@
+{"id":"attempt-00001","model":"model-001","input_tokens":800,"output_tokens":120,"latency_ms":900,"status":"success","retry":false}
+{"id":"attempt-00002","model":"model-001","input_tokens":100,"output_tokens":0,"latency_ms":1300,"status":"error","retry":true}

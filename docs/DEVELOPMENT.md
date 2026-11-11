@@ -22,3 +22,7 @@ python3 -m http.server 8080 --bind 127.0.0.1 --directory dist
 No dependency installation/build is needed. The automated test suite covers parser failures and limits, schema bounds, duplicate IDs, model limits, missing/zero prices, failed/retried attempt costs, p50/p95 math, filters, export privacy, SHA-256 changes and aggregate integer precision. Browser checks and hosted CI must be reported from observed runs, not inferred from local unit tests.
 
 Examples are in `examples/runs.json` and `examples/rates.json`. Reports can be reproduced with `require('./dist/ledger.js').createReport(runText, rateText, 'all')` in Node.js 20+.
+
+## 2026-11-11 — Agent trace integration
+
+Added observation/score correlation through Langfuse observations v2 + scores v3, bounded privacy-reduced trace JSON, export-local aliases preserving parent edges, missing-parent/cost indicators, and generation-only cost subtotals. Added a Thai trace explorer with expandable details, relative duration bars, exact evaluation values, review-gated export, and a selected-trace bridge to the original Ledger. SDK 5.2.0 tests use MockTransport and in-memory OTel with sockets blocked; no authenticated production Langfuse service was available. Hardened both CLI input paths against FIFOs/devices/symlinks and argument-error leakage, and made new output files private (0600). Browser visual QA for the new panel remains outstanding.

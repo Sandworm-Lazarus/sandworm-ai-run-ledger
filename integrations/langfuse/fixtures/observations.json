@@ -1,0 +1,44 @@
+{
+  "data": [
+    {
+      "id": "synthetic-generation-1",
+      "type": "GENERATION",
+      "model": "synthetic-model",
+      "startTime": "2026-01-01T00:00:00Z",
+      "endTime": "2026-01-01T00:00:00.900Z",
+      "usageDetails": {
+        "input": 800,
+        "output": 120
+      },
+      "level": "DEFAULT",
+      "metadata": {
+        "retry": false
+      },
+      "input": "synthetic private prompt excluded",
+      "output": "synthetic private answer excluded",
+      "userId": "synthetic-user",
+      "traceId": "synthetic-trace",
+      "projectId": "synthetic-project"
+    },
+    {
+      "id": "synthetic-generation-2",
+      "type": "GENERATION",
+      "model": "synthetic-model",
+      "startTime": "2026-01-01T00:00:01Z",
+      "endTime": "2026-01-01T00:00:02.300Z",
+      "usageDetails": {
+        "input": 100,
+        "output": 0
+      },
+      "level": "ERROR",
+      "metadata": {
+        "retry": true
+      },
+      "traceId": "synthetic-trace",
+      "projectId": "synthetic-project"
+    }
+  ],
+  "meta": {
+    "cursor": null
+  }
+}

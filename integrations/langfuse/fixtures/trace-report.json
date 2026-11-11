@@ -1,0 +1,60 @@
+{
+  "format": "sandworm-langfuse-trace/v1",
+  "source": "synthetic-fixture",
+  "observations": [
+    {
+      "id": "obs-00001",
+      "trace_id": "trace-0001",
+      "parent_id": null,
+      "parent_missing": false,
+      "type": "AGENT",
+      "model_alias": null,
+      "start_offset_ms": 0,
+      "latency_ms": 2400,
+      "status": "recorded",
+      "input_tokens": null,
+      "output_tokens": null,
+      "reported_cost_usd": 0.006
+    },
+    {
+      "id": "obs-00002",
+      "trace_id": "trace-0001",
+      "parent_id": "obs-00001",
+      "parent_missing": false,
+      "type": "TOOL",
+      "model_alias": null,
+      "start_offset_ms": 100,
+      "latency_ms": 400,
+      "status": "recorded",
+      "input_tokens": null,
+      "output_tokens": null,
+      "reported_cost_usd": null
+    },
+    {
+      "id": "obs-00003",
+      "trace_id": "trace-0001",
+      "parent_id": "obs-00001",
+      "parent_missing": false,
+      "type": "GENERATION",
+      "model_alias": "model-001",
+      "start_offset_ms": 550,
+      "latency_ms": 1800,
+      "status": "recorded",
+      "input_tokens": 800,
+      "output_tokens": 120,
+      "reported_cost_usd": 0.006
+    }
+  ],
+  "scores": [
+    {
+      "metric_alias": "eval-001",
+      "trace_id": "trace-0001",
+      "observation_id": "obs-00003",
+      "data_type": "NUMERIC",
+      "value": 0.9
+    }
+  ],
+  "excluded_scores": 0,
+  "privacy": "Export-local aliases; no raw IDs, names, prompts, responses, comments or metadata.",
+  "cost_method": "Langfuse reported observation totalCost; generation-only subtotal, not provider billing."
+}

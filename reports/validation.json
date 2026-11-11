@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "project": "sandworm-ai-run-ledger",
-  "checked_at": "2026-11-11T11:03:57.110Z",
+  "checked_at": "2026-11-11T12:38:46.238Z",
   "runtime": "v24.22.1",
   "result": "pass",
-  "tests": 36,
-  "passed": 36,
+  "tests": 51,
+  "passed": 51,
   "failed": 0,
-  "source_manifest_sha256": "ace9088268737b1030d1ca436b39180e339691203c3a5cce6a68bb5f3559f51c",
+  "source_manifest_sha256": "4c2aa2fe210feeb4ad0c1b69b0a1da707a53fdaed3bd8dd4bfaed97d50daf74f",
   "files": [
     {
       "path": "dist/app.js",
@@ -27,11 +27,11 @@
     },
     {
       "path": "dist/index.html",
-      "sha256": "bb9eeda6171b4bc575d4f929b61083db4bbe99f25157d55bc81d89e1acb92b7d"
+      "sha256": "e2676ae8ca4b56a99ba8dbe49a277761088ba6917e773cc4dbe259adea364bbd"
     },
     {
       "path": "dist/ledger.css",
-      "sha256": "4a1f77158c41d0ac7e5b69216b542c0833b3fdd9eea00669d57691aa3c7b7c97"
+      "sha256": "1a5df42565bf28984cf35c1987acee575fe635623b7a26889e7ee415cbe4d5f7"
     },
     {
       "path": "dist/ledger.js",
@@ -50,12 +50,28 @@
       "sha256": "9c1405a7272fc90d6b69c7fa921725a0fdef7419a7b642055a1d88635ef1583e"
     },
     {
+      "path": "dist/trace-app.js",
+      "sha256": "843aa0a1f731528d1e63be097af568507104d320a2c10983417b55e45c03dfbb"
+    },
+    {
+      "path": "dist/trace.js",
+      "sha256": "b23e6df912fe717ff95a38305c03c7f6d807b2833e93cb00364eccee95f4280d"
+    },
+    {
       "path": "tests/controller.test.cjs",
       "sha256": "ffb0aa16651e3a91b2b2acd32cf3878c4b012526cca4b0537ee340655c7cc271"
     },
     {
       "path": "tests/ledger.test.cjs",
       "sha256": "4ff82784882c71b454592d67bc21f2d9f65c0a50147fe5f887848c8c55cd8628"
+    },
+    {
+      "path": "tests/trace-controller.test.cjs",
+      "sha256": "ebe6d491490fe1bbd1f53dcfdf93fb912f67a2f2f24835c5e452173d2bcfcdd1"
+    },
+    {
+      "path": "tests/trace.test.cjs",
+      "sha256": "a29723128abec3ca7a21df0f7e77801a4204d9497568c04f48c6faae88574f88"
     },
     {
       "path": "examples/rates.json",

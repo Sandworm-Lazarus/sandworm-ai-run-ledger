@@ -79,3 +79,11 @@ Original Sandworm application and network artwork with a dark coral theme aligne
 ## Sandworm tools
 
 [Skill Doctor](https://github.com/Sandworm-Lazarus/sandworm-skill-doctor) · [Thai Eval Studio](https://github.com/Sandworm-Lazarus/sandworm-thai-eval) · [GameGuard Lab](https://github.com/Sandworm-Lazarus/sandworm-gameguard-lab) · [Agent Gate](https://github.com/Sandworm-Lazarus/sandworm-agent-gate) · [Privacy Workbench](https://github.com/Sandworm-Lazarus/sandworm-privacy-workbench)
+
+## Optional cloud worker integration
+
+[Langfuse read-only exporter](integrations/langfuse/README.md) adds a separately run integration with pinned upstream dependencies, synthetic fixtures, regression tests and SHA-256 validation records. See its guide for installation, privacy boundaries and verified integration scope. The browser application remains independently usable.
+
+## Agent trace explorer
+
+The new **AGENT TRACE** workspace imports the worker's `sandworm-langfuse-trace/v1` report. Expand parent–child steps to inspect latency, generation-only reported cost, token counts and observation/trace evaluations. IDs and model/metric names use export-local aliases. Missing parent, price and token data remain visible as missing, and unrelated score scales are not averaged. A selected trace's complete generations can be copied into Run Analysis for separate manual pricing. The browser remains offline; only the explicit CLI worker contacts your Langfuse server. See [the full integration and instrumentation guide](integrations/langfuse/README.md#agent-trace-explorer-new).

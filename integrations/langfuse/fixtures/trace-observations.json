@@ -1,0 +1,45 @@
+{
+  "data": [
+    {
+      "traceId": "synthetic-trace",
+      "projectId": "synthetic-project",
+      "level": "DEFAULT",
+      "id": "synthetic-agent",
+      "type": "AGENT",
+      "startTime": "2026-01-01T00:00:00Z",
+      "endTime": "2026-01-01T00:00:02.400Z",
+      "totalCost": 0.006,
+      "input": "private content must be absent"
+    },
+    {
+      "traceId": "synthetic-trace",
+      "projectId": "synthetic-project",
+      "level": "DEFAULT",
+      "id": "synthetic-tool",
+      "parentObservationId": "synthetic-agent",
+      "type": "TOOL",
+      "startTime": "2026-01-01T00:00:00.100Z",
+      "endTime": "2026-01-01T00:00:00.500Z"
+    },
+    {
+      "traceId": "synthetic-trace",
+      "projectId": "synthetic-project",
+      "level": "DEFAULT",
+      "id": "synthetic-generation",
+      "parentObservationId": "synthetic-agent",
+      "type": "GENERATION",
+      "startTime": "2026-01-01T00:00:00.550Z",
+      "endTime": "2026-01-01T00:00:02.350Z",
+      "model": "synthetic-model",
+      "usageDetails": {
+        "input": 800,
+        "output": 120
+      },
+      "totalCost": 0.006,
+      "output": "private content must be absent"
+    }
+  ],
+  "meta": {
+    "cursor": null
+  }
+}

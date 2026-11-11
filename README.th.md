@@ -62,3 +62,9 @@ SHA-256 เป็นลายนิ้วมือ **ไม่ใช่การ
 ## Sandworm tools
 
 [Skill Doctor](https://github.com/Sandworm-Lazarus/sandworm-skill-doctor) · [Thai Eval Studio](https://github.com/Sandworm-Lazarus/sandworm-thai-eval) · [GameGuard Lab](https://github.com/Sandworm-Lazarus/sandworm-gameguard-lab) · [Agent Gate](https://github.com/Sandworm-Lazarus/sandworm-agent-gate) · [Privacy Workbench](https://github.com/Sandworm-Lazarus/sandworm-privacy-workbench)
+
+## ดูขั้นตอน Agent ด้วย Langfuse
+
+ส่วน **AGENT TRACE** รับ JSON จาก Python worker ของเรา แล้วกางต้นไม้ parent–child เพื่อดูว่าแต่ละขั้นตอนเริ่มเมื่อไร ใช้เวลาเท่าไร มี token, ต้นทุน และคะแนนประเมินใดผูกอยู่ กดลอง trace สมมติได้ทันที หรือรัน `integrations/langfuse/trace_export.py` กับเซิร์ฟเวอร์ของคุณแล้วนำผลกลับมาเปิด
+
+ต้นทุนส่วนนี้เป็นค่าที่ Langfuse บันทึกไว้ รวมเฉพาะ GENERATION เพื่อไม่รวมยอด parent ซ้ำ แยกจากราคาประมาณที่คุณกำหนดเองใน Run Analysis ชื่อ/ID ต้นฉบับใช้ alias แต่ยังคงสายสัมพันธ์ หาก parent หรือราคาหายจะแสดงให้เห็น คะแนนคงสเกลเดิมและไม่เฉลี่ยข้ามเกณฑ์ หน้าเว็บไม่รับ API key และไม่เชื่อมเครือข่าย ดู [คู่มือและตัวอย่าง instrumentation](integrations/langfuse/README.md)

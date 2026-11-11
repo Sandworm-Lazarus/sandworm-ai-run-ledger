@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "project": "sandworm-ai-run-ledger-langfuse",
+  "validated_at": "2026-11-11T12:38:50.471678+00:00",
+  "status": "passed",
+  "passed": 38,
+  "sdk_smoke": {
+    "version": "5.2.0",
+    "status": "passed",
+    "mode": "mock-transport-contract",
+    "authenticated_live_server": false,
+    "network_requests": 0,
+    "trace_and_score_api_contract": "passed",
+    "otel_instrumentation": "passed",
+    "socket_connections": 0
+  },
+  "ledger_roundtrip": "passed",
+  "source_sha256": {
+    ".gitignore": "11f6918ab0269417d85d53d30cb31d7ff6b0ad6bc595c06b238837453a239218",
+    "README.md": "f8ca891c713fc655cb282058fa078262e3b6c93b4ed37af95ecfefef6d1c1a89",
+    "export.py": "9ca50dcc910dae59585e326707230b8e4fd961d5869b4b48f2ea9006b9fa8a54",
+    "fixtures/ledger.jsonl": "9f6af8247aa22aa84d9bb1bcd5e2a92785c72d0d35bfe0ec1af6269cd93af142",
+    "fixtures/observations.json": "55e1de9456227eadb129cdcf472f282d6edc38aa4d29bded19865561617b3f7f",
+    "fixtures/scores.json": "c57e464aa092fdca8563701a1700d1f4f32c9247feb6c47164a5873486a588e1",
+    "fixtures/trace-observations.json": "a9efa01357e29e13798524d514d0635978c4ebdf0ea82e88f36d9e2618f350e3",
+    "fixtures/trace-report.json": "ea47c2130545e0245b1bc3545e59e0c3b08fb8a3cf7d7eedba347c6c3db67ba2",
+    "instrument_agent.py": "a71031f53983a183d277d0ad9f2e649c3f8351ac3496b9ef5b41a58011ebee43",
+    "instrument_smoke.py": "5a5ec3874fb1ef3e9f9bf48557bdb0021d4e2f0464b6283b0e4b4ecadc87fbc0",
+    "ledger_smoke.cjs": "ad48ca375104067e0fa438d357d88c253577555172abf9236cdc94dcc82667f9",
+    "requirements-sdk.lock": "555f1813c584864b952690221145982d9027af9e8f620b8363723a202560c532",
+    "requirements-sdk.txt": "13dda21d6b4691bf3367788d71e65aa5ce8aea0a142bffc7f5ea739caab9b995",
+    "sdk_smoke.py": "bc882a98f2bbc976a4f78b07342c73324fd7dda9b283aab8cc69e7ec591a5fe9",
+    "tests/test_export.py": "a4d250ebe20f5816936a052cf3691b0500a4129a7b98359057ffe73f137b4861",
+    "tests/test_trace_export.py": "b9e4ec380c4190b4125d530a829409f55bd43698bdbdb0d9e626bb1648bd006c",
+    "trace_export.py": "9b6a118cc2cf5b80864f53b31a6252276c5d7890a05352a2f1c0d343924a106e",
+    "trace_sdk_smoke.py": "163c6719c30bb7dae3d623f63ffb0668fcef2e739cbfb0a3ebf70c48e329cf74",
+    "validate.py": "2dd9b6f72ac1d81e10bacdda73e70d79c709c3371019609981ee1245f38ba952"
+  },
+  "browser_qa": "not_run_runtime_unavailable",
+  "ledger_engine_sha256": "b8b6e25ac06ea381a4f3b2bd61f933aa4eefa4f09f6705e292d092ca84ed38fc"
+}

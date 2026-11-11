@@ -1,0 +1,25 @@
+{
+  "data": [
+    {
+      "id": "synthetic-score",
+      "projectId": "synthetic-project",
+      "name": "quality",
+      "dataType": "NUMERIC",
+      "value": 0.9,
+      "source": "API",
+      "timestamp": "2026-01-01T00:00:03Z",
+      "createdAt": "2026-01-01T00:00:03Z",
+      "updatedAt": "2026-01-01T00:00:03Z",
+      "environment": "default",
+      "subject": {
+        "kind": "observation",
+        "id": "synthetic-generation",
+        "traceId": "synthetic-trace"
+      }
+    }
+  ],
+  "meta": {
+    "cursor": null,
+    "limit": 100
+  }
+}

@@ -1,0 +1,110 @@
+[
+  {
+    "id": "demo-1",
+    "model": "demo-saffron",
+    "input_tokens": 800,
+    "output_tokens": 120,
+    "latency_ms": 620,
+    "status": "success",
+    "retry": false
+  },
+  {
+    "id": "demo-2",
+    "model": "demo-saffron",
+    "input_tokens": 865,
+    "output_tokens": 137,
+    "latency_ms": 780,
+    "status": "success",
+    "retry": false
+  },
+  {
+    "id": "demo-3",
+    "model": "demo-saffron",
+    "input_tokens": 930,
+    "output_tokens": 154,
+    "latency_ms": 910,
+    "status": "success",
+    "retry": false
+  },
+  {
+    "id": "demo-4",
+    "model": "demo-saffron",
+    "input_tokens": 995,
+    "output_tokens": 171,
+    "latency_ms": 1250,
+    "status": "success",
+    "retry": false
+  },
+  {
+    "id": "demo-5",
+    "model": "demo-saffron",
+    "input_tokens": 1060,
+    "output_tokens": 188,
+    "latency_ms": 3100,
+    "status": "error",
+    "retry": false
+  },
+  {
+    "id": "demo-6",
+    "model": "demo-saffron",
+    "input_tokens": 1125,
+    "output_tokens": 205,
+    "latency_ms": 850,
+    "status": "success",
+    "retry": true
+  },
+  {
+    "id": "demo-7",
+    "model": "demo-indigo",
+    "input_tokens": 1190,
+    "output_tokens": 222,
+    "latency_ms": 730,
+    "status": "success",
+    "retry": false
+  },
+  {
+    "id": "demo-8",
+    "model": "demo-indigo",
+    "input_tokens": 1255,
+    "output_tokens": 239,
+    "latency_ms": 1400,
+    "status": "success",
+    "retry": false
+  },
+  {
+    "id": "demo-9",
+    "model": "demo-indigo",
+    "input_tokens": 1320,
+    "output_tokens": 256,
+    "latency_ms": 1700,
+    "status": "success",
+    "retry": false
+  },
+  {
+    "id": "demo-10",
+    "model": "demo-indigo",
+    "input_tokens": 1385,
+    "output_tokens": 273,
+    "latency_ms": 2200,
+    "status": "success",
+    "retry": false
+  },
+  {
+    "id": "demo-11",
+    "model": "demo-indigo",
+    "input_tokens": 1450,
+    "output_tokens": 290,
+    "latency_ms": 4800,
+    "status": "error",
+    "retry": false
+  },
+  {
+    "id": "demo-12",
+    "model": "demo-indigo",
+    "input_tokens": 1515,
+    "output_tokens": 307,
+    "latency_ms": 1350,
+    "status": "success",
+    "retry": true
+  }
+]

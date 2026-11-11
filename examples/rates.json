@@ -1,0 +1,12 @@
+[
+  {
+    "model": "demo-saffron",
+    "input_usd_per_million": 0.25,
+    "output_usd_per_million": 1.25
+  },
+  {
+    "model": "demo-indigo",
+    "input_usd_per_million": 0.5,
+    "output_usd_per_million": 2
+  }
+]

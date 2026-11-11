@@ -1,0 +1,15 @@
+{
+  "name": "sandworm-ai-run-ledger",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.cjs",
+    "verify": "node scripts/verify.cjs",
+    "serve": "python3 -m http.server 8080 --bind 127.0.0.1 --directory dist",
+    "check": "node scripts/validate.cjs"
+  }
+}

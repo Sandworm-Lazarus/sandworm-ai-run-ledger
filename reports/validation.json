@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "project": "sandworm-ai-run-ledger",
+  "checked_at": "2026-11-11T11:03:57.110Z",
+  "runtime": "v24.22.1",
+  "result": "pass",
+  "tests": 36,
+  "passed": 36,
+  "failed": 0,
+  "source_manifest_sha256": "ace9088268737b1030d1ca436b39180e339691203c3a5cce6a68bb5f3559f51c",
+  "files": [
+    {
+      "path": "dist/app.js",
+      "sha256": "ec0ad9a1a5db5c59d9abb6c9efe669a37ec8df19285d78110e71704500167b14"
+    },
+    {
+      "path": "dist/fonts/Anuphan-OFL.txt",
+      "sha256": "cbc57ac0dddda1b70f246a16358fc3c2a32628a23a6d10ef64f746141d3fb159"
+    },
+    {
+      "path": "dist/fonts/Chakra-Petch-OFL.txt",
+      "sha256": "13831d02389d917d22fcfa6c79f98f8acbf61d230add0e73a4d4dc5f3bfb9e56"
+    },
+    {
+      "path": "dist/fonts/JetBrains-Mono-OFL.txt",
+      "sha256": "b2fe5e8987594e9ffd1d2ca52a2f5d73eb8335243893c5d6254b5ad69269591d"
+    },
+    {
+      "path": "dist/index.html",
+      "sha256": "bb9eeda6171b4bc575d4f929b61083db4bbe99f25157d55bc81d89e1acb92b7d"
+    },
+    {
+      "path": "dist/ledger.css",
+      "sha256": "4a1f77158c41d0ac7e5b69216b542c0833b3fdd9eea00669d57691aa3c7b7c97"
+    },
+    {
+      "path": "dist/ledger.js",
+      "sha256": "b8b6e25ac06ea381a4f3b2bd61f933aa4eefa4f09f6705e292d092ca84ed38fc"
+    },
+    {
+      "path": "dist/mark.svg",
+      "sha256": "ee731288307e122e75090d2b39fd735667292e8b069b430b8d760a2a3c3cd5ac"
+    },
+    {
+      "path": "dist/network.svg",
+      "sha256": "31596a6bbc4dea95c4abc8edd7b98bd9f00bad7ef797681de1b0574cb80f0e38"
+    },
+    {
+      "path": "dist/styles.css",
+      "sha256": "9c1405a7272fc90d6b69c7fa921725a0fdef7419a7b642055a1d88635ef1583e"
+    },
+    {
+      "path": "tests/controller.test.cjs",
+      "sha256": "ffb0aa16651e3a91b2b2acd32cf3878c4b012526cca4b0537ee340655c7cc271"
+    },
+    {
+      "path": "tests/ledger.test.cjs",
+      "sha256": "4ff82784882c71b454592d67bc21f2d9f65c0a50147fe5f887848c8c55cd8628"
+    },
+    {
+      "path": "examples/rates.json",
+      "sha256": "398e22c2d1cb797dca658fee7e3a8191deeb90356e905f5d6695962de076cf03"
+    },
+    {
+      "path": "examples/runs.json",
+      "sha256": "3fc6021ac8df478108c265489cbe48bd2995d86db22392972c1c799ff80241f4"
+    },
+    {
+      "path": "scripts/validate.cjs",
+      "sha256": "621742105969e8a8fdba38dc87436a75e5dd5b134efd27b6094f93a7922270e2"
+    },
+    {
+      "path": "scripts/verify.cjs",
+      "sha256": "69630303dd2a7cb483d5ab02cfb61f9b9cd20981c45882dbf07a0ce0e30f5c6c"
+    }
+  ],
+  "note": "Local execution only. SHA-256 detects changed bytes, not authenticity or a security certification. Hosted CI status is separate."
+}

@@ -83,3 +83,7 @@ After review, export `sandworm-experiment-comparison/v1` uses comparison aliases
 [experiment-bundle.json](../examples/experiment-bundle.json) is synthetic, with two models/variants and two repeats. The saffron group has quality 85 (80–90), one priced request of two, a known USD 0.001 subtotal and a null total.
 
 Automated checks are in [engine tests](../tests/experiments.test.cjs) and [controller tests](../tests/experiment-controller.test.cjs). The repository's existing push workflow runs `npm run check` on feature branches, including this implementation. Hosted execution must be verified from the actual commit's Actions run; no successful hosted result is claimed by this document. Real provider calls and visual browser QA are separate from these contract/controller checks.
+
+## Producer compatibility fixture
+
+[thai-eval-v1.synthetic.json](../examples/thai-eval-v1.synthetic.json) copies the synthetic producer fixture from [Thai Eval commit b678f0b](https://github.com/Sandworm-Lazarus/sandworm-thai-eval/blob/b678f0b3e1966937bf2c9824e024489c3b7c44c3/examples/experiment.synthetic.json). Its all-a/all-b hashes are placeholders for a contract test, not real dataset provenance. A regression test imports it and checks quality 75, measured latency 100 ms and unknown total cost. A pure-JavaScript cloud V8 import sanity check also accepted this exact producer fixture; full hosted Node.js checks remain pending execution.

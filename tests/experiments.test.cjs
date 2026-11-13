@@ -72,3 +72,14 @@ test('complete zero-cost usage differs from missing price',()=>{
   const b=copy();for(const a of b.attempts){a.cost_usd=0;a.cost_source='provider-reported';}
   for(const g of analyze(b).comparisons){assert.equal(g.totalCostUsd,0);assert.equal(g.pricedAttempts,g.attempts);}
 });
+
+test('published Thai Eval producer fixture imports without coercing unknown cost',()=>{
+ const fixture=fs.readFileSync(require.resolve('../examples/thai-eval-v1.synthetic.json'),'utf8'),a=api.analyze(fixture),g=a.comparisons[0];
+ assert.equal(a.experimentCount,1);assert.equal(g.model,'synthetic-model');assert.equal(g.scoreMean,75);assert.equal(g.totalCostUsd,null);assert.equal(g.pricedAttempts,0);assert.equal(g.usageAttempts,1);assert.equal(g.p95LatencyMs,100);
+});
+
+test('UTC creation timestamps reject normalized-invalid calendar dates and missing zone',()=>{
+ fails(b=>{b.createdAt='2026-02-30T00:00:00Z';},'SCHEMA');
+ fails(b=>{b.createdAt='2026-11-13T00:00:00';},'SCHEMA');
+ const b=copy();b.createdAt='2026-11-13T00:00:00.1Z';assert.equal(analyze(b).experimentCount,1);
+});

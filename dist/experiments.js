@@ -14,6 +14,11 @@
   const optionalNumber=(x,max)=>x===null||finite(x,max);
   const token=x=>x===null||(Number.isSafeInteger(x)&&x>=0&&x<=LIMITS.tokens);
   const repeat=x=>Number.isInteger(x)&&x>=1&&x<=100;
+  function timestamp(x){
+    if(typeof x!=='string'||!/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d{1,3})?Z$/.test(x)||!Number.isFinite(Date.parse(x)))return false;
+    const normalized=x.includes('.')?x.replace(/\.(\d{1,3})Z$/,(_,digits)=>'.'+digits.padEnd(3,'0')+'Z'):x.replace(/Z$/,'.000Z');
+    return new Date(x).toISOString()===normalized;
+  }
   function date(x){return typeof x==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(x)&&Number.isFinite(Date.parse(x))&&new Date(x).toISOString().slice(0,10)===x;}
   function parse(text){
     if(typeof text!=='string'||new TextEncoder().encode(text).length>LIMITS.bytes)fail('INPUT');
@@ -23,7 +28,7 @@
     let totalAttempts=0,totalEvaluations=0;
     const normalized=list.map(b=>{
       if(!obj(b)||b.kind!=='sandworm-experiment/v1'||b.schemaVersion!==1||!id(b.experimentId)||!label(b.datasetId)||!hash(b.datasetSha256)||!hash(b.planSha256)||
-         typeof b.createdAt!=='string'||b.createdAt.length>40||!/^\d{4}-\d{2}-\d{2}T/.test(b.createdAt)||!Number.isFinite(Date.parse(b.createdAt))||
+         !timestamp(b.createdAt)||
          !obj(b.normalization)||b.normalization.nfc!==true||b.normalization.whitespace!==true||
          !Array.isArray(b.evaluations)||!b.evaluations.length||!Array.isArray(b.attempts)||!b.attempts.length)fail('SCHEMA');
       totalAttempts+=b.attempts.length;totalEvaluations+=b.evaluations.length;

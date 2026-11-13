@@ -1,5 +1,11 @@
 # Sandworm AI Run Ledger
 
+## Experiment Compare
+
+Import Thai Eval `sandworm-experiment/v1` bundles to compare model/prompt repeats on one exact dataset. Quality ranges, measured latency and cost include explicit coverage; missing cost remains unknown. Duplicate IDs or mixed datasets reject the whole input. [Contract, limits and workflow](docs/EXPERIMENTS.md) · [Synthetic bundle](examples/experiment-bundle.json).
+
+The experiment feature's full hosted check is pending execution. Earlier committed validation reports describe their recorded source hashes, not this feature branch.
+
 ![AI Run Ledger — Sandworm theme](docs/cover.svg)
 
 A browser-local ledger for AI run logs. Import JSON/JSONL, supply your own token rates, and inspect estimated USD cost, token totals, retries, errors, and nearest-rank latency percentiles. No model API, account, upload service, or runtime dependency is required.

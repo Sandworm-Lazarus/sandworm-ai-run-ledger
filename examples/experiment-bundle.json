@@ -1,0 +1,129 @@
+{
+  "kind": "sandworm-experiment/v1",
+  "schemaVersion": 1,
+  "experimentId": "demo-experiment-1",
+  "createdAt": "2026-11-13T00:00:00Z",
+  "datasetId": "synthetic-demo",
+  "datasetSha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "planSha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+  "normalization": {
+    "nfc": true,
+    "whitespace": true
+  },
+  "attempts": [
+    {
+      "id": "demo-attempt-1",
+      "evaluationId": "demo-eval-1",
+      "caseId": "demo-case-1",
+      "model": "demo-saffron",
+      "variantId": "concise",
+      "promptSha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "repeat": 1,
+      "input_tokens": 100,
+      "output_tokens": 30,
+      "latency_ms": 600,
+      "status": "success",
+      "cost_usd": 0.001,
+      "cost_source": "user-rate",
+      "rate_date": "2026-11-13",
+      "rate_source": "Synthetic arithmetic rates",
+      "score": null
+    },
+    {
+      "id": "demo-attempt-2",
+      "evaluationId": "demo-eval-2",
+      "caseId": "demo-case-1",
+      "model": "demo-saffron",
+      "variantId": "concise",
+      "promptSha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "repeat": 2,
+      "input_tokens": 100,
+      "output_tokens": 30,
+      "latency_ms": 1000,
+      "status": "success",
+      "cost_usd": null,
+      "cost_source": "unknown",
+      "rate_date": null,
+      "rate_source": null,
+      "score": null
+    },
+    {
+      "id": "demo-indigo-attempt-1",
+      "evaluationId": "demo-indigo-eval-1",
+      "caseId": "demo-case-1",
+      "model": "demo-indigo",
+      "variantId": "detailed",
+      "promptSha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+      "repeat": 1,
+      "input_tokens": 150,
+      "output_tokens": 60,
+      "latency_ms": 1300,
+      "status": "success",
+      "cost_usd": 0.003,
+      "cost_source": "provider-reported",
+      "rate_date": null,
+      "rate_source": null,
+      "score": null
+    },
+    {
+      "id": "demo-indigo-attempt-2",
+      "evaluationId": "demo-indigo-eval-2",
+      "caseId": "demo-case-1",
+      "model": "demo-indigo",
+      "variantId": "detailed",
+      "promptSha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+      "repeat": 2,
+      "input_tokens": 150,
+      "output_tokens": 60,
+      "latency_ms": 1600,
+      "status": "success",
+      "cost_usd": 0.003,
+      "cost_source": "provider-reported",
+      "rate_date": null,
+      "rate_source": null,
+      "score": null
+    }
+  ],
+  "evaluations": [
+    {
+      "id": "demo-eval-1",
+      "model": "demo-saffron",
+      "variantId": "concise",
+      "promptSha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "repeat": 1,
+      "score": 80,
+      "expectedAttempts": 1,
+      "completedAttempts": 1
+    },
+    {
+      "id": "demo-eval-2",
+      "model": "demo-saffron",
+      "variantId": "concise",
+      "promptSha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "repeat": 2,
+      "score": 90,
+      "expectedAttempts": 1,
+      "completedAttempts": 1
+    },
+    {
+      "id": "demo-indigo-eval-1",
+      "model": "demo-indigo",
+      "variantId": "detailed",
+      "promptSha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+      "repeat": 1,
+      "score": 92,
+      "expectedAttempts": 1,
+      "completedAttempts": 1
+    },
+    {
+      "id": "demo-indigo-eval-2",
+      "model": "demo-indigo",
+      "variantId": "detailed",
+      "promptSha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+      "repeat": 2,
+      "score": 94,
+      "expectedAttempts": 1,
+      "completedAttempts": 1
+    }
+  ]
+}

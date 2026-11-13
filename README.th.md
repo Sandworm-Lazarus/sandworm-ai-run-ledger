@@ -1,5 +1,11 @@
 # Sandworm AI Run Ledger
 
+## เปรียบเทียบชุดทดลอง Thai Eval
+
+นำเข้า `sandworm-experiment/v1` เพื่อเทียบโมเดลและพรอมป์ต์บน dataset เดียวกัน แสดงค่าเฉลี่ย/ช่วงคะแนนแต่ละ repeat, P50/P95 latency และต้นทุนพร้อมจำนวนข้อมูลที่มีจริง ค่าใช้จ่ายที่ไม่ทราบยังเป็น unknown; ID ซ้ำหรือ dataset hash ต่างกันจะปฏิเสธทั้งชุด [สัญญาข้อมูลและขอบเขต](docs/EXPERIMENTS.md) · [ตัวอย่างสมมติ](examples/experiment-bundle.json)
+
+การตรวจ feature นี้บน hosted CI ยังรอการรัน รายงาน validation ที่ commit ไว้ก่อนหน้าระบุผลของ source hash ในรายงานนั้น ไม่ใช่ผลของ feature branch ปัจจุบัน
+
 ![AI Run Ledger — Sandworm theme](docs/cover.svg)
 
 เครื่องมือวิเคราะห์ log การเรียก AI ภายในเบราว์เซอร์ แสดง token, ต้นทุนประมาณจากราคาที่คุณกำหนด, error, retry และ latency P50/P95 ไม่มีการเชื่อมต่อบริการโมเดลหรืออัปโหลด log

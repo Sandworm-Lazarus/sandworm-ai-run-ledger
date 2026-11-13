@@ -1,0 +1,45 @@
+{
+  "kind": "sandworm-experiment/v1",
+  "schemaVersion": 1,
+  "experimentId": "synthetic-experiment-1",
+  "createdAt": "2026-11-13T00:00:00.000Z",
+  "datasetId": "synthetic-dataset",
+  "datasetSha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "planSha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+  "normalization": {
+    "nfc": true,
+    "whitespace": true
+  },
+  "attempts": [
+    {
+      "id": "synthetic-attempt-1",
+      "evaluationId": "synthetic-evaluation-1",
+      "model": "synthetic-model",
+      "variantId": "prompt-a",
+      "promptSha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "repeat": 1,
+      "input_tokens": 10,
+      "output_tokens": 20,
+      "latency_ms": 100,
+      "status": "success",
+      "cost_usd": null,
+      "cost_source": "unknown",
+      "rate_date": null,
+      "rate_source": null,
+      "score": null,
+      "caseId": "synthetic-case-1"
+    }
+  ],
+  "evaluations": [
+    {
+      "id": "synthetic-evaluation-1",
+      "model": "synthetic-model",
+      "variantId": "prompt-a",
+      "promptSha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "repeat": 1,
+      "score": 75,
+      "expectedAttempts": 1,
+      "completedAttempts": 1
+    }
+  ]
+}
